@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche employée</title>
+</head>
+<body>
+<h1>Fiche employée</h1>
+<a href="/employee/home">Home</a>
+<div>
+    <p> Nom: <span type="text" th:text="${employee_selected.name}"> </span></p>
+        <p>Address: <span type="text" th:text="${employee_selected.address}"></span></p>
+        <p>Mail: <span type="text" th:text="${employee_selected.email}"></span></p>
+        <p>Phone: <span type="text" th:text="${employee_selected.phone}"></span></p>
+        <p>Function: <span type="text" th:text="${employee_selected.fonction}"></span></p>
+</div>
+
+</body>
+</html>
